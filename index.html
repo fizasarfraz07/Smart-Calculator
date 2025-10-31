@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Advanced Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="calculator-wrap">
+    <div class="calc-container glass">
+      <header class="calc-header">
+        <h1 class="title">⚡Smart Calculator</h1>
+        <button id="themeToggle" class="mode-btn">🌙</button>
+      </header>
+
+      <input type="text" id="display" class="display" disabled />
+
+      <!-- Memory Buttons -->
+      <div class="memory-buttons">
+        <button class="btn mem" data-action="MC">MC</button>
+        <button class="btn mem" data-action="MR">MR</button>
+        <button class="btn mem" data-action="M+">M+</button>
+        <button class="btn mem" data-action="M-">M-</button>
+      </div>
+
+      <!-- Calculator Buttons -->
+      <div class="buttons">
+        <button class="btn operator" data-value="C">C</button>
+        <button class="btn operator" data-value="DEL">DEL</button>
+        <button class="btn operator" data-value="%">%</button>
+        <button class="btn operator" data-value="/">÷</button>
+
+        <button class="btn" data-value="7">7</button>
+        <button class="btn" data-value="8">8</button>
+        <button class="btn" data-value="9">9</button>
+        <button class="btn operator" data-value="*">×</button>
+
+        <button class="btn" data-value="4">4</button>
+        <button class="btn" data-value="5">5</button>
+        <button class="btn" data-value="6">6</button>
+        <button class="btn operator" data-value="-">−</button>
+
+        <button class="btn" data-value="1">1</button>
+        <button class="btn" data-value="2">2</button>
+        <button class="btn" data-value="3">3</button>
+        <button class="btn operator" data-value="+">+</button>
+
+        <button class="btn zero" data-value="0">0</button>
+        <button class="btn" data-value=".">.</button>
+        <button class="btn equals" data-value="=">=</button>
+      </div>
+
+      <!-- Scientific Row -->
+      <div class="scientific">
+        <button class="btn sci" data-func="sqrt">√</button>
+        <button class="btn sci" data-func="square">x²</button>
+        <button class="btn sci" data-func="pi">π</button>
+        <button class="btn sci" data-func="sin">sin</button>
+        <button class="btn sci" data-func="cos">cos</button>
+        <button class="btn sci" data-func="tan">tan</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
